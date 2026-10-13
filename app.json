@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "scheme": "skystream-drone-delivery",
+    "name": "Quantum Drone Delivery",
+    "slug": "SkyStream_Drone_delivery_system",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon-app-square.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-quantum-drone-delivery.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#22d3ee"
+    },
+    "ios": {
+      "bundleIdentifier": "com.quantumdronedelivery.app",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Quantum Drop Drone uses your location to show live order tracking."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon-app-square.png",
+        "backgroundColor": "#22d3ee"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.SkyStream_Drone_delivery_system",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/icon-app-square.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      "expo-font",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "apiBaseUrl": "",
+      "trackingSocketUrl": "",
+      "paymentsApiUrl": "",
+      "eas": {
+        "projectId": "9d4a8688-dc9a-4866-9208-ab5bb5d66ee1"
+      }
+    }
+  }
+}
